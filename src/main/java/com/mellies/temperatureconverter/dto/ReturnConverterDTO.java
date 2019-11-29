@@ -10,6 +10,13 @@ public class ReturnConverterDTO implements Serializable {
 
     private UnitEnum unit;
 
+    public ReturnConverterDTO(){};
+
+    public ReturnConverterDTO(Double value, UnitEnum unit) {
+        this.value = value;
+        this.unit = unit;
+    }
+
     public Double getValue() {
         return value;
     }
